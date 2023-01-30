@@ -86,15 +86,15 @@
             <legend class="filter-form-title">Тип жилья:</legend>
             <label class="filter-form-item-type-of-apartment">
               <input class="filter-form-radio" type="radio" value="hotel" name="type-of-apartment" checked>
-               Гостиница
+              Гостиница
             </label>
             <label class="filter-form-item-type-of-apartment">
               <input class="filter-form-radio" type="radio" value="motel" name="type-of-apartment">
-               Мотель
+              Мотель
             </label>
             <label class="filter-form-item-type-of-apartment">
               <input class="filter-form-radio" type="radio" value="apartment" name="type-of-apartment">
-               Апартаменты
+              Апартаменты
             </label>
           </fieldset>
 
@@ -116,29 +116,28 @@
       </section>
 
       <section class="result">
-
-        <select class="result-select-control" aria-label="Сортировка.">
-          <option value="cheep">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-
-        <ul class="result-position-control">
-          <li class="result-position-item">
-            <button class="position-button position-button-current" type="button">
-              <span class="visually-hidden">Показать иконками</span>
-          </li>
-          <li class="result-position-item">
-            <button class="position-button" type="button">
-              <span class="visually-hidden">Показать по одной</span>
-          </li>
-          <li class="result-position-item"></li>
-          <button class="position-button" type="button">
-            <span class="visually-hidden">Показать списком</span>
+        <span class="result-quantity">Найдено гостиниц: 38</span>
+        <div class="result-sort">
+          <select class="result-select-control" aria-label="Сортировка.">
+            <option value="cheep">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <ul class="result-position-control">
+            <li class="result-position-item">
+              <button class="position-button position-button-current" type="button">
+                <span class="visually-hidden">Показать иконками</span>
             </li>
-        </ul>
-
-
+            <li class="result-position-item">
+              <button class="position-button" type="button">
+                <span class="visually-hidden">Показать по одной</span>
+            </li>
+            <li class="result-position-item"></li>
+            <button class="position-button" type="button">
+              <span class="visually-hidden">Показать списком</span>
+              </li>
+          </ul>
+        </div>
         <ul class="apartment-list">
           <li class="apartment-card">
             <a class="apartment-card-link" href="#">
@@ -220,12 +219,14 @@
         </ul>
 
         <section class="subscription-form">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="paragraph-bold">подпишитесь на рассылку</p>
-          <p class="paragraph-small">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="title">Подпишитесь на рассылку</h2>
+          <p class="paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form-email" method="post" action="https://echo.htmlacademy.ru/">
-            <input type="email" name="email" value="Ваш e-mail">
-            <input type="submit" name="email-submit-button" value="подписаться">
+            <label>
+              <span class="visually-hidden">Ввидите Ваш e-mail.</span>
+              <input type="email" name="email" placeholder="Ваш e-mail" required>
+            </label>
+            <button class="subscription-form-button" type="submit">Подписаться</button>
           </form>
         </section>
 
