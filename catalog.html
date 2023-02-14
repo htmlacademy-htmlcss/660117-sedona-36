@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML Academy: Седона">
+    <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -31,17 +32,17 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">
+            <a href="#" class="navigation-link navigation-link-search">
               <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-favourites" href="#">
               <span class="visually-hidden">Избранное.</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link navigation-link-button" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -53,10 +54,12 @@
       <section class="filters">
 
         <header class="inner-header">
-          <h1>Гостиницы Седоны</h1>
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Домашняя страница</a>
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+                <span class="visually-hidden">Домашняя страница</span>
+              </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -108,8 +111,8 @@
             </label>
           </fieldset>
           <div class="filter-form-button-section">
-            <button class="filter-form-button-submit" type="submit">применить</button>
-            <button class="filter-form-button-reset" type="reset">сбросить</button>
+            <button class="filter-form-button-submit blue-color-button" type="submit">применить</button>
+            <button class="filter-form-button-reset transparent-button" type="reset">сбросить</button>
           </div>
         </form>
 
@@ -146,9 +149,9 @@
             </a>
             <p class="apartment-card-type">Гостиница</p>
             <span class="apartment-card-coast">От 4000 ₽</span>
-            <a class="apartment-card-link" href="#">подробнее</a>
-            <button class="apartment-card-like-button" type="button">в избранное</button>
-            <p class="apartment-card-stars-rating">
+            <a class="apartment-card-link-button" href="#">подробнее</a>
+            <button class="apartment-card-like-button blue-color-button" type="button">в избранное</button>
+            <p class="apartment-card-stars-rating four-stars-rating">
               <span class="visualy-hidden">4 звезды</span>
             </p>
             <p class="apartment-card-rating">рейтинг: 8,5</p>
@@ -160,9 +163,9 @@
             </a>
             <p class="apartment-card-type">Гостиница</p>
             <span class="apartment-card-coast">От 5000 ₽</span>
-            <a class="apartment-card-link" href="#">подробнее</a>
-            <button class="apartment-card-like-button pushed-button" type="button">в избранном</button>
-            <p class="apartment-card-stars-rating">
+            <a class="apartment-card-link-button" href="#">подробнее</a>
+            <button class="apartment-card-like-button blue-color-button green-color-button" type="button">в избранном</button>
+            <p class="apartment-card-stars-rating four-stars-rating">
               <span class="visualy-hidden">4 звезды</span>
             </p>
             <p class="apartment-card-rating">рейтинг: 9,2</p>
@@ -174,9 +177,9 @@
             </a>
             <p class="apartment-card-type">Гостиница</p>
             <span class="apartment-card-coast">От 2500 ₽</span>
-            <a class="apartment-card-link" href="#">подробнее</a>
-            <button class="apartment-card-like-button pushed-button" type="button">в избранное</button>
-            <p class="apartment-card-stars-rating">
+            <a class="apartment-card-link-button" href="#">подробнее</a>
+            <button class="apartment-card-like-button blue-color-button" type="button">в избранное</button>
+            <p class="apartment-card-stars-rating three-stars-rating">
               <span class="visualy-hidden">3 звезды</span>
             </p>
             <p class="apartment-card-rating">рейтинг: 6,9</p>
@@ -188,9 +191,9 @@
             </a>
             <p class="apartment-card-type">Гостиница</p>
             <span class="apartment-card-coast">От 1500 ₽</span>
-            <a class="apartment-card-link" href="#">подробнее</a>
-            <button class="apartment-card-like-button pushed-button" type="button">в избранное</button>
-            <p class="apartment-card-stars-rating">
+            <a class="apartment-card-link-button" href="#">подробнее</a>
+            <button class="apartment-card-like-button blue-color-button pushed-button" type="button">в избранное</button>
+            <p class="apartment-card-stars-rating two-stars-rating">
               <span class="visualy-hidden">2 звезды</span>
             </p>
             <p class="apartment-card-rating">рейтинг: 5,0</p>
@@ -226,7 +229,7 @@
               <span class="visually-hidden">Ввидите Ваш e-mail.</span>
               <input type="email" name="email" placeholder="Ваш e-mail" required>
             </label>
-            <button class="subscription-form-button" type="submit">Подписаться</button>
+            <button class="subscription-form-button blue-color-button" type="submit">Подписаться</button>
           </form>
         </section>
 
@@ -234,18 +237,18 @@
 
     <footer class="page-footer">
       <ul class="social-contacts-list">
-        <li class="social-contacts-link">
-          <a href="https://vk.com/htmlacademy">
+        <li class="social-contacts-item">
+          <a class="social-contacts-link-vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Седона в вконакте.</span>
           </a>
         </li>
-        <li class="social-contacts-link">
-          <a href="https://t.me/htmlacademy">
+        <li class="social-contacts-item">
+          <a class="social-contacts-link-telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Седона в телеграме.</span>
           </a>
         </li>
-        <li class="social-contacts-link">
-          <a href="https://youtube.com/user/htmlacademyru">
+        <li class="social-contacts-item">
+          <a class="social-contacts-link-youtube" href="https://youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Седона в youtube.</span>
           </a>
         </li>
