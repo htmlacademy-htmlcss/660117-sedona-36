@@ -51,7 +51,7 @@
 
       </header>
 
-      <main class="main-catalog">
+      <main class="container main-catalog">
 
         <section class="filters">
 
@@ -103,7 +103,7 @@
               </label>
             </fieldset>
 
-            <fieldset class="filter-form-group">
+            <fieldset class="filter-form-group filter-form-group-price">
               <legend class="filter-form-title">Стоимость: ₽</legend>
               <label class="filter-form-item-price">
                 <input class="filter-form-price-input" type="text" name="apartment-coast-from" value="0">от
@@ -121,8 +121,9 @@
         </section>
 
         <section class="result">
-          <span class="result-quantity">Найдено гостиниц: 38</span>
+
           <div class="result-sort">
+            <span class="result-quantity">Найдено гостиниц: 38</span>
             <select class="result-select-control" aria-label="Сортировка.">
               <option value="cheep">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -210,36 +211,40 @@
 
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pangination-link">1</a>
+              <a class="pagination-link">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pangination-link" href="#">2</a>
+              <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pangination-link" href="#">3</a>
+              <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pangination-link" href="#">4</a>
+              <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <p class="pangination-link">...</p>
+              <span class="pagination-link pagination-link-divider">...</span>
             </li>
             <li class="pagination-item">
-              <a class="pangination-link" href="#">10</a>
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
 
-          <section class="subscription-form">
-            <h2 class="title">Подпишитесь на рассылку</h2>
-            <p class="paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscription-form-email" method="post" action="https://echo.htmlacademy.ru/">
-              <label>
-                <span class="visually-hidden">Ввидите Ваш e-mail.</span>
-                <input type="email" name="email" placeholder="Ваш e-mail" required>
-              </label>
-              <button class="button subscription-form-button blue-color-button" type="submit">Подписаться</button>
-            </form>
-          </section>
+        </section>
+
+        <section class="subscription-form">
+          <h2 class="subscription-form-title title">Подпишитесь на рассылку</h2>
+          <p class="subscription-form-paragraph paragraph">Только полезная информация и никакого спама, честное
+            бойскаутское!</p>
+          <form class="subscription-form-email" method="post" action="https://echo.htmlacademy.ru/">
+            <label>
+              <span class="visually-hidden">Ввидите Ваш e-mail.</span>
+              <input class="subscription-form-email-input-field" type="email" name="email" placeholder="Ваш e-mail"
+                required>
+            </label>
+            <button class="button subscription-form-button blue-color-button" type="submit">Подписаться</button>
+          </form>
+        </section>
 
       </main>
 
