@@ -107,7 +107,7 @@
               <legend class="filter-form-title">Стоимость: ₽</legend>
               <label class="filter-form-item-price">
                 <input class="filter-form-price-input" type="text" name="apartment-coast-from" value="0">от
-              </label class="filter-form-item-price">
+              </label>
               <label>
                 <input class="filter-form-price-input" type="text" name="apartment-coast-to" value="9000">до
               </label>
@@ -133,17 +133,21 @@
               <li class="result-position-item">
                 <button class="position-button position-button-icons position-button-current" type="button">
                   <span class="visually-hidden">Показать иконками</span>
+                </button>
               </li>
               <li class="result-position-item">
                 <button class="position-button position-button-one" type="button">
                   <span class="visually-hidden">Показать по одной</span>
+                </button>
               </li>
-              <li class="result-position-item"></li>
-              <button class="position-button position-button-list" type="button">
-                <span class="visually-hidden">Показать списком</span>
-                </li>
+              <li class="result-position-item">
+                <button class="position-button position-button-list" type="button">
+                  <span class="visually-hidden">Показать списком</span>
+                </button>
+              </li>
             </ul>
           </div>
+
           <ul class="apartment-list">
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
@@ -151,14 +155,16 @@
                   alt="Каньон и звёздное небо.">
                 <h3 class="apartment-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="apartment-card-type">Гостиница</p>
-              <span class="apartment-card-coast">От 4000 ₽</span>
-              <a class="button apartment-card-link-button" href="#">подробнее</a>
-              <button class="button apartment-card-like-button blue-color-button" type="button">в избранное</button>
-              <p class="apartment-card-stars-rating four-stars-rating">
-                <span class="visualy-hidden">4 звезды</span>
-              </p>
-              <p class="apartment-card-rating">рейтинг: 8,5</p>
+              <div class="apartment-card-content">
+                <p class="apartment-card-type">Гостиница</p>
+                <span class="apartment-card-coast">От 4000 ₽</span>
+                <a class="button apartment-card-link-button" href="#">подробнее</a>
+                <button class="button apartment-card-like-button blue-color-button" type="button">в избранное</button>
+                <p class="apartment-card-stars-rating four-stars-rating">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <p class="apartment-card-rating">рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
@@ -166,15 +172,17 @@
                   height="212" alt="Скальные массивы и радуга.">
                 <h3 class="apartment-card-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="apartment-card-type">Гостиница</p>
-              <span class="apartment-card-coast">От 5000 ₽</span>
-              <a class="button apartment-card-link-button" href="#">подробнее</a>
-              <button class="button apartment-card-like-button blue-color-button green-color-button" type="button">в
-                избранном</button>
-              <p class="apartment-card-stars-rating four-stars-rating">
-                <span class="visualy-hidden">4 звезды</span>
-              </p>
-              <p class="apartment-card-rating">рейтинг: 9,2</p>
+              <div class="apartment-card-content">
+                <p class="apartment-card-type">Гостиница</p>
+                <span class="apartment-card-coast">От 5000 ₽</span>
+                <a class="button apartment-card-link-button" href="#">подробнее</a>
+                <button class="button apartment-card-like-button blue-color-button green-color-button" type="button">в
+                  избранном</button>
+                <p class="apartment-card-stars-rating four-stars-rating">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <p class="apartment-card-rating">рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
@@ -182,14 +190,16 @@
                   alt="Скальные массивы при дневном освещении.">
                 <h3 class="apartment-card-title">Desert Quail Inn</h3>
               </a>
-              <p class="apartment-card-type">Гостиница</p>
-              <span class="apartment-card-coast">От 2500 ₽</span>
-              <a class="button apartment-card-link-button" href="#">подробнее</a>
-              <button class="button apartment-card-like-button blue-color-button" type="button">в избранное</button>
-              <p class="apartment-card-stars-rating three-stars-rating">
-                <span class="visualy-hidden">3 звезды</span>
-              </p>
-              <p class="apartment-card-rating">рейтинг: 6,9</p>
+              <div class="apartment-card-content">
+                <p class="apartment-card-type">Гостиница</p>
+                <span class="apartment-card-coast">От 2500 ₽</span>
+                <a class="button apartment-card-link-button" href="#">подробнее</a>
+                <button class="button apartment-card-like-button blue-color-button" type="button">в избранное</button>
+                <p class="apartment-card-stars-rating three-stars-rating">
+                  <span class="visually-hidden">3 звезды</span>
+                </p>
+                <p class="apartment-card-rating">рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
@@ -197,15 +207,17 @@
                   alt="Скальные массивы и звездное небо.">
                 <h3 class="apartment-card-title">GreenTree Inn</h3>
               </a>
-              <p class="apartment-card-type">Гостиница</p>
-              <span class="apartment-card-coast">От 1500 ₽</span>
-              <a class="button apartment-card-link-button" href="#">подробнее</a>
-              <button class="button apartment-card-like-button blue-color-button pushed-button" type="button">в
-                избранное</button>
-              <p class="apartment-card-stars-rating two-stars-rating">
-                <span class="visualy-hidden">2 звезды</span>
-              </p>
-              <p class="apartment-card-rating">рейтинг: 5,0</p>
+              <div class="apartment-card-content">
+                <p class="apartment-card-type">Гостиница</p>
+                <span class="apartment-card-coast">От 1500 ₽</span>
+                <a class="button apartment-card-link-button" href="#">подробнее</a>
+                <button class="button apartment-card-like-button blue-color-button pushed-button" type="button">в
+                  избранное</button>
+                <p class="apartment-card-stars-rating two-stars-rating">
+                  <span class="visually-hidden">2 звезды</span>
+                </p>
+                <p class="apartment-card-rating">рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
 
@@ -232,12 +244,12 @@
 
         </section>
 
-        <section class="subscription-form">
+        <section class="subscription-form subscription-form-catalog">
           <h2 class="subscription-form-title title">Подпишитесь на рассылку</h2>
           <p class="subscription-form-paragraph paragraph">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
           <form class="subscription-form-email" method="post" action="https://echo.htmlacademy.ru/">
-            <label>
+            <label class="subscription-form-email-label">
               <span class="visually-hidden">Ввидите Ваш e-mail.</span>
               <input class="subscription-form-email-input-field" type="email" name="email" placeholder="Ваш e-mail"
                 required>
@@ -245,7 +257,6 @@
             <button class="button subscription-form-button blue-color-button" type="submit">Подписаться</button>
           </form>
         </section>
-
       </main>
 
       <footer class="page-footer">
