@@ -63,18 +63,24 @@ body {
 }
 
 .navigation-list {
-  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 470px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .navigation-user {
-  width: 300px;
+  justify-content: end;
+  align-items: center;
+  width: 330px;
   margin-left: auto;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -85,11 +91,18 @@ body {
 .navigation-link-search {
   background-image: url("../images/svg/icon-search.svg");
   background-repeat: no-repeat;
+  min-width: 44px;
+  min-height: 64px;
+  background-position: center;
 }
 
 .navigation-link-favorites {
   background-image: url("../images/svg/icon-heart.svg");
   background-repeat: no-repeat;
+  min-width: 44px;
+  min-height: 64px;
+  background-position: center;
+  margin-right: 20px;
 }
 
 .intro {
@@ -222,14 +235,35 @@ body {
 .subscription-form {
   background-image: url("../images/background/background-image-subscribe-form.jpg");
   background-size: cover;
-  padding: 96px 258px;
+  padding: 100px 260px;
   background-repeat: no-repeat;
   color: #ffffff;
+}
+
+.subscription-form-catalog {
+  background-image: none;
+  color: #000000;
+}
+
+.subscription-form-email {
+  display: flex;
 }
 
 .subscription-form-email-input-field {
   font-family: inherit;
   line-height: 24px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 20px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  background: #F2F2F2;
+}
+
+.subscription-form-email-label {
+  flex-grow: 1;
+
 }
 
 .hotel-research {
@@ -237,16 +271,25 @@ body {
 }
 
 .page-footer {
-  width: 1060px;
-  margin: 40px auto;
+  padding: 40px 70px;
   display: flex;
   justify-content: space-between;
 }
 
 .social-contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social-contacts-link {
+  display: block;
+  min-width: 48px;
+  min-height: 40px;
+  background-position: center;
 }
 
 .social-contacts-link-vk {
@@ -267,6 +310,9 @@ body {
 .page-footer-htmlacademy-link {
   background-image: url("../images/svg/icon-html-academy.svg");
   background-repeat: no-repeat;
+  width: 150px;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 .social-contacts-phone {
@@ -332,7 +378,8 @@ body {
 
 .result-sort {
   display: flex;
-
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .result-quantity {
@@ -359,13 +406,28 @@ body {
   margin-left: 200px;
   padding: 0;
   width: 292px;
+  min-height: 49px;
 }
 
 .result-position-control {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0 0 0 auto;
   list-style: none;
-  width: 160px;
+  width: 180px;
+  gap: 20px 8px;
+}
+
+.position-button {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  background-position: center;
+  cursor: pointer;
 }
 
 .position-button-icons {
@@ -383,27 +445,48 @@ body {
   background-repeat: no-repeat;
 }
 
+.position-button-current {
+  border: 2px solid #000000;
+}
+
 .apartment-list {
-  padding: 40px 0 80px 0;
+  padding: 0 0 40px 0;
+  margin: 0 0 40px 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .apartment-card {
   width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.apartment-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .pagination {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   list-style: none;
   gap: 20px 8px;
 }
 
 .pagination-link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,6 +496,11 @@ body {
   color:#ffffff;
   background-color: #82b3d3;
   text-decoration: none;
+}
+
+.pagination-link-current {
+  background-color: #f2f2f2;
+  color: #000000;
 }
 
 .pagination-link-divider {
@@ -454,6 +542,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   width: 232px;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
 }
 
 .navigation-link-button {
