@@ -119,12 +119,12 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-intro-title{
+.advantages-intro-title {
   margin: 0 0 25px 0;
   padding: 0;
 }
 
-.advantages-intro-paragraph{
+.advantages-intro-paragraph {
   margin: 0;
   padding: 0;
 }
@@ -468,9 +468,37 @@ body {
   flex-direction: column;
 }
 
+.apartment-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: start;
+  margin: 16px 0;
+}
+
 .apartment-card-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.apartment-card-type {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: start;
+}
+
+.apartment-card-coast {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: end;
+}
+
+.apartment-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 9px 22px;
 }
 
 .pagination {
@@ -493,7 +521,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
 }
