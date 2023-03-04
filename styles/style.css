@@ -197,7 +197,28 @@ body {
 .service-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  padding: 102px 85px;
+  padding: 185px 85px 80px;
+}
+
+.service-item-apartment {
+  background-image: url(../images/svg/icon-advantage-house.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 85px;
+}
+
+.service-item-food {
+  background-image: url(../images/svg/icon-advantage-burger.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 85px;
+}
+
+.service-item-souvenirs {
+  background-image: url(../images/svg/icon-advantage-presentbox.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 85px;
 }
 
 .service-title {
@@ -286,33 +307,37 @@ body {
 }
 
 .social-contacts-link {
+  position: relative;
   display: block;
   min-width: 48px;
   min-height: 40px;
-  background-position: center;
 }
 
-.social-contacts-link-vk {
-  background-image: url("../images/svg/icon-vk.svg");
-  background-repeat: no-repeat;
+.social-contacts-link-svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.social-contacts-link-telegram {
-  background-image: url("../images/svg/icon-telegram.svg");
-  background-repeat: no-repeat;
-}
-
-.social-contacts-link-youtube {
-  background-image: url("../images/svg/icon-youtube.svg");
-  background-repeat: no-repeat;
+.social-contacts-link:hover .social-contacts-link-svg {
+  fill: #2c4250;
 }
 
 .page-footer-htmlacademy-link {
-  background-image: url("../images/svg/icon-html-academy.svg");
-  background-repeat: no-repeat;
   width: 150px;
-  background-position-x: right;
-  background-position-y: center;
+  position: relative;
+}
+
+.page-footer-htmlacademy-link-svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .social-contacts-phone {
@@ -320,6 +345,14 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+.social-contacts-phone:hover {
+  color: #756157;
+}
+
+.social-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .inner-header {
@@ -351,7 +384,18 @@ body {
 }
 
 .breadcrumbs-link-home {
+  display: block;
+  min-width: 13px;
+  min-height: 21px;
   background-image: url("../images/svg/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.breadcrumbs-link-current {
+  padding-left: 18px;
+  background-image: url(../images/svg/breadcrumbs.svg);
   background-repeat: no-repeat;
 }
 
@@ -404,9 +448,15 @@ body {
 
 .result-select-control {
   margin-left: 200px;
-  padding: 0;
+  padding: 14px 20px;
   width: 292px;
   min-height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.result-select-control:hover {
+  border: 2px solid #68A2CA;
 }
 
 .result-position-control {
@@ -446,6 +496,11 @@ body {
 }
 
 .position-button-current {
+  border: 2px solid #000000;
+}
+
+.position-button:hover,
+.position-button:active {
   border: 2px solid #000000;
 }
 
@@ -526,6 +581,26 @@ body {
   text-decoration: none;
 }
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link-divider:active, .pagination-link-current:active  {
+  color: #000000;
+}
+
+.pagination-link-current:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination-link-divider:hover {
+  background-color: #ffffff;
+}
+
 .pagination-link-current {
   background-color: #f2f2f2;
   color: #000000;
@@ -561,9 +636,11 @@ body {
 }
 
 .hotel-research-button {
+  display: block;
   font-size: 20px;
   line-height: 36px;
   width: 376px;
+  margin: 0 auto;
 }
 
 .subscription-form-button {
@@ -591,7 +668,27 @@ body {
 
 .apartment-card-stars-rating {
   background-image: url("../images/svg/rating-star.svg");
-  background-repeat: no-repeat;
+}
+
+.two-stars-rating {
+  background-repeat: space no-repeat;
+  background-position: 0 50%;
+  background-clip: content-box;
+  padding-right: 100px;
+}
+
+.three-stars-rating {
+  background-repeat: space no-repeat;
+  background-position: 0 50%;
+  background-clip: content-box;
+  padding-right: 80px;
+}
+
+.four-stars-rating {
+  background-repeat: space no-repeat;
+  background-position: 0 50%;
+  background-clip: content-box;
+  padding-right: 60px;
 }
 
 .apartment-card-rating {
@@ -610,4 +707,26 @@ body {
 
 .green-color-button {
   background-color: #7db54f;
+}
+
+.button:hover {
+  background-color: #615048;
+  cursor: pointer;
+}
+
+.blue-color-button:hover {
+  background-color: #68A2CA;
+}
+
+.transparent-button:hover {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+}
+
+.green-color-button:hover {
+  background-color: #6C9E42;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
