@@ -54,6 +54,7 @@ body {
 .page-header {
   display: flex;
   padding: 0 70px;
+  height: 64px;
 }
 
 .navigation-header {
@@ -79,6 +80,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-weight: 700;
@@ -86,6 +88,16 @@ body {
   line-height: 24px;
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-link-search {
@@ -166,16 +178,38 @@ body {
 }
 
 .advantages-content {
+  position: relative;
   background-color: #82b3d3;
   color: #ffffff;
   width: 400px;
   padding: 102px 85px;
 }
 
+.advantages-content::after {
+  content: "";
+  position: absolute;
+  top: 188px;
+  left: 170px;
+  right: 170px;
+  height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .advantages-item {
+  position: relative;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  padding: 102px 85px;
+  padding: 112px 85px;
+}
+
+.advantages-item::after {
+  content: "";
+  position: absolute;
+  top: 198px;
+  left: 170px;
+  right: 170px;
+  height: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .advantages-item:nth-child(even) {
@@ -320,10 +354,23 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+  fill: #83B3D3;
 }
 
 .social-contacts-link:hover .social-contacts-link-svg {
-  fill: #2c4250;
+  fill: #68A2CA;
+}
+
+.social-contacts-link:focus .social-contacts-link-svg {
+  fill: #68A2CA;
+}
+
+.social-contacts-link:focus {
+  outline: none;
+}
+
+.social-contacts-link:active .social-contacts-link-svg {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .page-footer-htmlacademy-link {
@@ -337,8 +384,25 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto 0 auto auto;
 }
+
+.page-footer-htmlacademy-link:hover .page-footer-htmlacademy-link-svg {
+  fill: #756157;
+}
+
+.page-footer-htmlacademy-link:focus .page-footer-htmlacademy-link-svg {
+  fill: #756157;
+}
+
+.page-footer-htmlacademy-link:focus{
+  outline: none;
+}
+
+.page-footer-htmlacademy-link:active .page-footer-htmlacademy-link-svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 .social-contacts-phone {
   color: #000000;
@@ -349,6 +413,11 @@ body {
 
 .social-contacts-phone:hover {
   color: #756157;
+}
+
+.social-contacts-phone:focus {
+  color: #756157;
+  outline: none;
 }
 
 .social-contacts-phone:active {
@@ -387,16 +456,46 @@ body {
   display: block;
   min-width: 13px;
   min-height: 21px;
-  background-image: url("../images/svg/icon-home.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   margin-right: 10px;
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-link-home:hover .breadcrumbs-link-home-svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-home:focus .breadcrumbs-link-home-svg {
+  fill: #FFFFFF;
+  outline: none;
+}
+
+.breadcrumbs-link-home:focus{
+  outline: none;
+}
+
+.breadcrumbs-link-home:active .breadcrumbs-link-home-svg {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-link-current {
   padding-left: 18px;
-  background-image: url(../images/svg/breadcrumbs.svg);
+  background-image: url(../images/svg/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-current:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-current:focus {
+  color: #FFFFFF;
+  outline: none;
+}
+
+.breadcrumbs-link-current:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-form {
@@ -457,6 +556,11 @@ body {
 
 .result-select-control:hover {
   border: 2px solid #68A2CA;
+}
+
+.result-select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .result-position-control {
@@ -585,11 +689,17 @@ body {
   background-color: #68A2CA;
 }
 
+.pagination-link:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-link-divider:active, .pagination-link-current:active  {
+.pagination-link-divider:active,
+.pagination-link-current:active {
   color: #000000;
 }
 
@@ -724,6 +834,27 @@ body {
 }
 
 .green-color-button:hover {
+  background-color: #6C9E42;
+}
+
+.button:focus {
+  background-color: #615048;
+  cursor: pointer;
+  outline: none;
+}
+
+.blue-color-button:focus {
+  background-color: #68A2CA;
+}
+
+.transparent-button:focus {
+  color: #ffffff;
+  background-color: transparent;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.green-color-button:focus {
   background-color: #6C9E42;
 }
 
