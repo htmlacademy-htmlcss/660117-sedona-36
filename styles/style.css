@@ -52,6 +52,8 @@ body {
 }
 
 .page-header {
+  position: relative;
+  z-index: 1;
   display: flex;
   padding: 0 70px;
   height: 64px;
@@ -352,16 +354,16 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  text-transform: lowercase;
 }
 
 .subscription-form-email-input-field:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .subscription-form-email-input-field:focus {
-  background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .subscription-form-email-label {
@@ -401,15 +403,15 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .social-contacts-link:hover .social-contacts-link-svg {
-  fill: #68A2CA;
+  fill: #68a2Ca;
 }
 
 .social-contacts-link:focus .social-contacts-link-svg {
-  fill: #68A2CA;
+  fill: #68a2Ca;
 }
 
 .social-contacts-link:active .social-contacts-link-svg {
@@ -510,7 +512,6 @@ body {
 .breadcrumbs-link-home {
   min-width: 13px;
   min-height: 21px;
-
   fill: #ffffff;
 }
 
@@ -533,7 +534,7 @@ body {
 }
 
 .breadcrumbs-link-current:focus {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs-link-current:active {
@@ -670,7 +671,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
 }
 
 .filter-form-price-wrapper {
@@ -714,7 +715,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 12px 40px 12px 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   font-family: inherit;
   font-weight: 700;
@@ -723,12 +724,13 @@ body {
 }
 
 .filter-form-price-input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .filter-form-price-input:focus {
-  background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .range {
@@ -763,7 +765,7 @@ body {
 }
 
 .range-button:active {
-  border: 2px solid #83B3D3;
+  border: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -786,8 +788,12 @@ body {
   padding: 14px 20px;
   width: 292px;
   min-height: 49px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   appearance: none;
   background-image: url("../images/svg/select-arrow.svg");
   background-repeat: no-repeat;
@@ -796,11 +802,11 @@ body {
 }
 
 .result-select-control:hover {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
 
 .result-select-control:focus {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
 
 .result-position-control {
@@ -819,7 +825,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   border-radius: 4px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   background-position: center;
   cursor: pointer;
 }
@@ -855,12 +861,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .apartment-card {
   width: 340px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
   display: flex;
@@ -926,11 +932,11 @@ body {
 }
 
 .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
@@ -1063,10 +1069,10 @@ body {
 }
 
 .button:disabled {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
-.transparent-button:disabled{
+.transparent-button:disabled {
   background-color: transparent;
   opacity: 0.1;
 }
@@ -1077,7 +1083,7 @@ body {
 }
 
 .blue-color-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .transparent-button:hover {
@@ -1086,7 +1092,7 @@ body {
 }
 
 .green-color-button:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button:focus {
@@ -1095,18 +1101,18 @@ body {
 }
 
 .blue-color-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .transparent-button:focus {
   color: #ffffff;
   background-color: transparent;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
 .green-color-button:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button:active {
@@ -1146,7 +1152,7 @@ body {
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   display: flex;
 }
@@ -1156,11 +1162,11 @@ body {
 }
 
 .modal-close-button:hover {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .modal-close-button:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
 }
 
 .modal-close-button:active .modal-close-button-svg {
@@ -1187,26 +1193,32 @@ body {
   margin-bottom: 48px;
 }
 
-.modal-data-error-massage {
+.modal-data-error-message {
+  position: absolute;
   display: block;
-  padding: 4px 20px;
+  padding: 4px 20px 0 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FF5757;
+  color: #ff5757;
   text-align: start;
   max-width: 440px;
 }
 
-.modal-data-relevant-massage {
+.modal-data-relevant-message {
+  position: absolute;
   display: block;
-  padding: 4px 20px;
+  padding: 4px 20px 0 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
   text-align: start;
   max-width: 440px;
+}
+
+.modal-message-close {
+  display: none;
 }
 
 .modal-count-block {
@@ -1228,7 +1240,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding: 14px 60px 14px 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
   background-image: url("../images/svg/modal-data-input-icon.svg");
@@ -1237,13 +1249,18 @@ body {
   background-position-y: center;
 }
 
+.modal-input-wrapper {
+  padding-bottom: 25px;
+}
+
 .modal-data-input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-data-input:focus {
-  background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .modal-button-count {
@@ -1251,7 +1268,7 @@ body {
   border: none;
   height: 48px;
   width: 40px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 14px 10px;
   fill-opacity: 0.3;
 }
@@ -1262,7 +1279,7 @@ body {
 
 .modal-button-count:focus .modal-button-svg {
   fill: #000000;
-  box-shadow: 0 0 0 3px #82B3D3;
+  box-shadow: 0 0 0 3px #83b3d3;
   border-radius: 4px;
 }
 
@@ -1274,7 +1291,7 @@ body {
   border: none;
   height: 48px;
   width: 30px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 14px 10px;
   font-family: inherit;
   font-weight: 700;

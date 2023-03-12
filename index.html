@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTML Academy: Седона">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/svg/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -185,7 +187,7 @@
       </footer>
 
     </div>
-    <!--Для показа модального окна с элемента с классом modal-wrapper нужно смнять класс modal-wrapper-close-->
+    <!--Для показа модального окна с элемента с классом modal-wrapper нужно снять класс modal-wrapper-close-->
     <div class="modal-wrapper modal-wrapper-close">
       <section class="modal-window">
         <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
@@ -200,17 +202,21 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="modal-form-block">
             Дата Заезда:
-            <div>
-              <input class="modal-data-input" type="text" name="date-from" placeholder="Укажите дату" value="27 апреля 2020">
-              <span class="modal-data-error-massage">Мы не можем отправить вас в прошлое.</span>
+            <div class="modal-input-wrapper">
+              <input class="modal-data-input" type="text" name="date-from" placeholder="Укажите дату"
+                value="27 апреля 2020">
+              <!--Для показа сообщения об ошибке с элемента с классом modal-data-error-message нужно снять класс modal-message-close-->
+              <span class="modal-data-error-message modal-message-close">Мы не можем отправить вас в прошлое.</span>
             </div>
           </label>
           <label class="modal-form-block">
             Дата Выезда:
-            <div>
+            <div class="modal-input-wrapper">
               <input class="modal-data-input" type="text" name="date-to" placeholder="Укажите дату"
                 value="1 сентября 2023">
-              <span class="modal-data-relevant-massage">На эти даты есть свободные номера. Пока есть.</span>
+              <!--Для показа сообщения об ошибке с элемента с классом modal-data-relevant-message нужно снять класс modal-message-close-->
+              <span class="modal-data-relevant-message modal-message-close">На эти даты есть свободные номера. Пока
+                есть.</span>
             </div>
           </label>
           <div class="modal-form-block">
