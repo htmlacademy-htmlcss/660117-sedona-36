@@ -25,13 +25,13 @@
         <nav class="navigation-header">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link menu-link" href="index.html">Главная</a>
+              <a class="navigation-link menu-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link menu-link" href="#">О седоне</a>
+              <a class="navigation-link menu-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current menu-link" href="#">Гостиницы</a>
+              <a class="navigation-link navigation-link-current menu-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -45,10 +45,8 @@
                 <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="button navigation-link navigation-link-button" href="#">Хочу сюда</a>
-            </li>
           </ul>
+          <a class="button navigation-link-button" href="#">Хочу сюда!</a>
         </nav>
 
       </header>
@@ -61,7 +59,7 @@
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link-home breadcrumbs-link" href="index.html" >
+                <a class="breadcrumbs-link-home breadcrumbs-link" href="index.html">
                   <svg class="breadcrumbs-link-home-svg" aria-hidden="true" focusable="false"
                     xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -78,90 +76,98 @@
           </header>
 
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="filter-form-wrapper">
+              <fieldset class="filter-form-group">
+                <legend class="filter-form-title">Инфраструктура:</legend>
+                <ul class="filter-form-list">
+                  <li class="filter-form-listing">
+                    <label class="filter-form-item">
+                      <input class="filter-form-checkbox visually-hidden" type="checkbox" value="swimming-pool"
+                        name="infrastructure" checked>
+                      <span class="filter-form-mark"></span>
+                      <span class="filter-form-label">Бассеин</span>
+                    </label>
+                  </li>
+                  <li class="filter-form-listing">
+                    <label class="filter-form-item">
+                      <input class="filter-form-checkbox visually-hidden" type="checkbox" value="parking"
+                        name="infrastructure" checked>
+                      <span class="filter-form-mark"></span>
+                      <span class="filter-form-label">Парковка</span>
+                    </label>
+                  </li>
+                  <li class="filter-form-listing">
+                    <label class="filter-form-item">
+                      <input class="filter-form-checkbox visually-hidden" type="checkbox" value="wi-fi"
+                        name="infrastructure">
+                      <span class="filter-form-mark"></span>
+                      <span class="filter-form-label">WI-FI</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-form-group">
-              <legend class="filter-form-title">Инфраструктура:</legend>
-              <ul class="filter-form-list">
-                <li class="filter-form-listing">
-                  <label class="filter-form-item">
-                    <input class="filter-form-checkbox visually-hidden" type="checkbox" value="swimming-pool"
-                      name="infrastructure" checked>
-                    <span class="filter-form-mark"></span>
-                    <span class="filter-form-label">Бассеин</span>
-                  </label>
-                </li>
-                <li class="filter-form-listing">
-                  <label class="filter-form-item">
-                    <input class="filter-form-checkbox visually-hidden" type="checkbox" value="parking"
-                      name="infrastructure" checked>
-                    <span class="filter-form-mark"></span>
-                    <span class="filter-form-label">Парковка</span>
-                  </label>
-                </li>
-                <li class="filter-form-listing">
-                  <label class="filter-form-item">
-                    <input class="filter-form-checkbox visually-hidden" type="checkbox" value="wi-fi"
-                      name="infrastructure">
-                    <span class="filter-form-mark"></span>
-                    <span class="filter-form-label">WI-FI</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter-form-group">
+                <legend class="filter-form-title">Тип Жилья:</legend>
+                <ul class="filter-form-list">
+                  <li class="filter-form-listing">
+                    <label class="filter-form-item">
+                      <input class="filter-form-radio visually-hidden" type="radio" value="hotel"
+                        name="type-of-apartment" checked>
+                      <span class="filter-form-radio-mark"></span>
+                      <span class="filter-form-label">Гостиница</span>
+                    </label>
+                  </li>
+                  <li class="filter-form-listing">
+                    <label class="filter-form-item">
+                      <input class="filter-form-radio visually-hidden" type="radio" value="motel"
+                        name="type-of-apartment">
+                      <span class="filter-form-radio-mark"></span>
+                      <span class="filter-form-label">Мотель</span>
+                    </label>
+                  </li>
+                  <li class="filter-form-listing">
+                    <label class="filter-form-item">
+                      <input class="filter-form-radio visually-hidden" type="radio" value="apartment"
+                        name="type-of-apartment">
+                      <span class="filter-form-radio-mark"></span>
+                      <span class="filter-form-label">Апартаменты</span>
+                    </label>
+                  </li>
+              </fieldset>
+            </div>
 
-            <fieldset class="filter-form-group">
-              <legend class="filter-form-title">Тип жилья:</legend>
-              <ul class="filter-form-list">
-                <li class="filter-form-listing">
-                  <label class="filter-form-item">
-                    <input class="filter-form-radio visually-hidden" type="radio" value="hotel" name="type-of-apartment" checked>
-                    <span class="filter-form-radio-mark"></span>
-                    <span class="filter-form-label">Гостиница</span>
+            <div class="filter-form-wrapper">
+              <fieldset class="filter-form-group filter-form-group-price">
+                <legend class="filter-form-title">Стоимость, ₽:</legend>
+                <div class="filter-form-price-wrapper">
+                  <label class="filter-form-item-price">
+                    <input class="filter-form-price-input item-price-min" type="text" name="apartment-coast-from"
+                      value="0">
+                    <span>от</span>
                   </label>
-                </li>
-                <li class="filter-form-listing">
-                  <label class="filter-form-item">
-                    <input class="filter-form-radio visually-hidden" type="radio" value="motel" name="type-of-apartment">
-                    <span class="filter-form-radio-mark"></span>
-                    <span class="filter-form-label">Мотель</span>
+                  <label class="filter-form-item-price">
+                    <input class="filter-form-price-input item-price-max" type="text" name="apartment-coast-to"
+                      value="9000">
+                    <span>до</span>
                   </label>
-                </li>
-                <li class="filter-form-listing">
-                  <label class="filter-form-item">
-                    <input class="filter-form-radio visually-hidden" type="radio" value="apartment" name="type-of-apartment">
-                    <span class="filter-form-radio-mark"></span>
-                    <span class="filter-form-label">Апартаменты</span>
-                  </label>
-                </li>
-            </fieldset>
-
-            <fieldset class="filter-form-group filter-form-group-price">
-              <legend class="filter-form-title">Стоимость,₽:</legend>
-              <div class="filter-form-price-wrapper">
-                <label class="filter-form-item-price">
-                  <input class="filter-form-price-input item-price-min" type="text" name="apartment-coast-from" value="0">
-                  <span>от</span>
-                </label>
-                <label class="filter-form-item-price">
-                  <input class="filter-form-price-input item-price-max" type="text" name="apartment-coast-to" value="9000">
-                  <span>до</span>
-                </label>
-              </div>
-              <div class="range">
-                <div class="range-line" style="width: 226px">
-                  <button class="range-button range-button-min">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
-                  </button>
-                  <button class="range-button range-button-max">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
-                  </button>
                 </div>
-              </div>
+                <div class="range">
+                  <div class="range-line" style="width: 226px">
+                    <button class="range-button range-button-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-button range-button-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
 
-            </fieldset>
-            <div class="filter-form-button-section">
-              <button class="button filter-form-button-submit blue-color-button" type="submit">применить</button>
-              <button class="button filter-form-button-reset transparent-button" type="reset">сбросить</button>
+              </fieldset>
+              <div class="filter-form-button-section">
+                <button class="button filter-form-button-submit blue-color-button" type="submit">применить</button>
+                <button class="button filter-form-button-reset transparent-button" type="reset">сбросить</button>
+              </div>
             </div>
           </form>
 
@@ -198,7 +204,7 @@
           <ul class="apartment-list">
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
-                <img class="apartment-card-photo" src="images/content/amara-resort-and-spa.jpg" width="300" height="212"
+                <img class="apartment-card-photo" src="images/content/amara-resort-and-spa.jpg" width="300" height="210"
                   alt="Каньон и звёздное небо.">
                 <h3 class="apartment-card-title">Amara Resort & Spa</h3>
               </a>
@@ -216,7 +222,7 @@
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
                 <img class="apartment-card-photo" src="images/content/villas-at-poco-diablo.jpg" width="300"
-                  height="212" alt="Скальные массивы и радуга.">
+                  height="210" alt="Скальные массивы и радуга.">
                 <h3 class="apartment-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="apartment-card-content">
@@ -233,7 +239,7 @@
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
-                <img class="apartment-card-photo" src="images/content/desert-quail-inn.jpg" width="300" height="212"
+                <img class="apartment-card-photo" src="images/content/desert-quail-inn.jpg" width="300" height="210"
                   alt="Скальные массивы при дневном освещении.">
                 <h3 class="apartment-card-title">Desert Quail Inn</h3>
               </a>
@@ -250,7 +256,7 @@
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
-                <img class="apartment-card-photo" src="images/content/gree-tree-inn.jpg" width="300" height="212"
+                <img class="apartment-card-photo" src="images/content/gree-tree-inn.jpg" width="300" height="210"
                   alt="Скальные массивы и звездное небо.">
                 <h3 class="apartment-card-title">GreenTree Inn</h3>
               </a>

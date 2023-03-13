@@ -56,13 +56,18 @@ body {
   z-index: 1;
   display: flex;
   padding: 0 70px;
-  height: 64px;
+  min-height: 64px;
+}
+
+.navigation-logo {
+  position: absolute;
 }
 
 .navigation-header {
   display: flex;
   width: 920px;
   padding-left: 30px;
+  margin-left: 140px;
 }
 
 .navigation-list {
@@ -114,7 +119,6 @@ body {
   position: relative;
   min-width: 44px;
   min-height: 64px;
-  margin-right: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/svg/icon-heart.svg");
@@ -151,7 +155,7 @@ body {
   position: relative;
   background-image: url("../images/background/background-image-intro.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  min-height: 485px;
   padding: 51px 371px;
   background-color: #7cc9fb;
 }
@@ -163,7 +167,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 401px;
+  top: 428px;
   left: 0;
 }
 
@@ -172,20 +176,23 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .advantages-intro-title {
   margin: 0 0 25px 0;
   padding: 0;
+  max-width: 652px;
 }
 
 .advantages-intro-paragraph {
   margin: 0;
   padding: 0;
+  max-width: 652px;
 }
 
 .advantages-intro {
-  padding: 69px 274px;
+  padding: 69px 274px 90px;
 }
 
 .paragraph {
@@ -246,6 +253,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   padding: 112px 85px;
+  color: #000000;
 }
 
 .advantages-item:nth-child(even) {
@@ -297,6 +305,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .service-desription {
@@ -317,6 +326,7 @@ body {
 
 .subscription-form-title {
   margin: 0 0 20px 0;
+  color: #ffffff;
 }
 
 .subscription-form-paragraph {
@@ -375,7 +385,7 @@ body {
 }
 
 .page-footer {
-  padding: 40px 70px;
+  padding: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -384,7 +394,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   list-style: none;
 }
@@ -446,10 +456,12 @@ body {
 
 
 .social-contacts-phone {
+  font-family: inherit;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  padding: 7px 13px 0 0;
 }
 
 .social-contacts-phone:hover {
@@ -503,6 +515,11 @@ body {
   padding-right: 19px;
   color: inherit;
   text-decoration: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
   background-image: url("../images/svg/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -543,18 +560,24 @@ body {
 
 .filter-form {
   display: flex;
+  gap: 140px;
+}
+
+.filter-form-wrapper {
+  display: flex;
   gap: 70px;
 }
 
 .filter-form-group {
+  display: block;
   width: 150px;
-  margin: 0 auto 0 0;
   padding: 0;
+  margin: 0;
 }
 
 .filter-form-group-price {
+  display: block;
   width: 288px;
-  margin: 0 0 0 auto;
 }
 
 .filter-form-button-section {
@@ -575,6 +598,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .filter-form-group {
@@ -612,8 +636,17 @@ body {
   background-color: #ffffff;
 }
 
+.filter-form-label {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .filter-form-title {
   text-align: start;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -676,7 +709,7 @@ body {
 
 .filter-form-price-wrapper {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .item-price-min {
@@ -815,7 +848,7 @@ body {
   padding: 0;
   margin: 0 0 0 auto;
   list-style: none;
-  width: 180px;
+  width: 160px;
   gap: 20px 8px;
 }
 
@@ -878,7 +911,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: start;
-  margin: 16px 0;
+  margin: 10px 0 16px;
 }
 
 .apartment-card-content {
@@ -923,7 +956,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   border-radius: 4px;
   color: #ffffff;
@@ -1007,7 +1040,11 @@ body {
 }
 
 .navigation-link-button {
-  width: 160px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0 14px 20px;
 }
 
 .apartment-card-link-button,
@@ -1376,6 +1413,10 @@ body {
   display: block;
 }
 
+
+.menu-link {
+  color: #000000;
+}
 
 .menu-link:hover,
 .navigation-logo:hover,
