@@ -497,7 +497,7 @@ body {
 .filters {
   background-image: url("../images/background/background-image-filter.jpg");
   background-size: cover;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 73px 70px;
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #7cc9fb;
@@ -562,12 +562,7 @@ body {
 
 .filter-form {
   display: flex;
-  gap: 140px;
-}
-
-.filter-form-wrapper {
-  display: flex;
-  gap: 70px;
+  gap: 69px;
 }
 
 .filter-form-group {
@@ -580,6 +575,7 @@ body {
 .filter-form-group-price {
   display: block;
   width: 288px;
+  padding-left: 70px;
 }
 
 .filter-form-button-section {
@@ -592,8 +588,8 @@ body {
 
 .result-sort {
   display: flex;
-  align-items: center;
   margin-bottom: 40px;
+  align-items: start;
 }
 
 .result-quantity {
@@ -601,7 +597,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-right: 20px;
+  margin: 8px 20px 0 0;
+  text-align: left;
 }
 
 .filter-form-group {
@@ -712,7 +709,7 @@ body {
 
 .filter-form-price-wrapper {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .item-price-min {
@@ -742,7 +739,7 @@ body {
 
 .filter-form-item-price span {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -816,12 +813,12 @@ body {
 }
 
 .result {
-  padding: 50px 70px 60px 70px;
+  padding: 50px 70px 55px 70px;
 }
 
 .result-select-control {
   margin-left: auto;
-  padding: 14px 20px;
+  padding: 12px 20px;
   width: 292px;
   min-height: 49px;
   border: 2px solid #e5e5e5;
@@ -835,6 +832,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 258px;
+  flex-shrink: 0;
 }
 
 .result-select-control:hover {
@@ -853,6 +851,7 @@ body {
   list-style: none;
   width: 160px;
   gap: 20px 8px;
+  flex-shrink: 0;
 }
 
 .position-button {
@@ -891,8 +890,8 @@ body {
 }
 
 .apartment-list {
-  padding: 0 0 40px 0;
-  margin: 0 0 40px 0;
+  padding: 0 0 39px 0;
+  margin: 0 0 39px 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -1067,27 +1066,22 @@ body {
 
 .apartment-card-stars-rating {
   background-image: url("../images/svg/rating-star.svg");
+  background-repeat: space no-repeat;
 }
 
 .two-stars-rating {
-  background-repeat: space no-repeat;
   background-position: 0 50%;
-  background-clip: content-box;
-  padding-right: 100px;
+  margin-right: 100px;
 }
 
 .three-stars-rating {
-  background-repeat: space no-repeat;
   background-position: 0 50%;
-  background-clip: content-box;
-  padding-right: 80px;
+  margin-right: 75px;
 }
 
 .four-stars-rating {
-  background-repeat: space no-repeat;
   background-position: 0 50%;
-  background-clip: content-box;
-  padding-right: 60px;
+  margin-right: 52px;
 }
 
 .apartment-card-rating {
