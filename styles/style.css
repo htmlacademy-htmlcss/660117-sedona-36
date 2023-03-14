@@ -326,6 +326,10 @@ body {
 
 .subscription-form-title {
   margin: 0 0 20px 0;
+}
+
+.subscription-form-title-white {
+  margin: 0 0 20px 0;
   color: #ffffff;
 }
 
@@ -461,7 +465,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  padding: 7px 13px 0 0;
+  margin: 7px 13px 0 0;
 }
 
 .social-contacts-phone:hover {
@@ -544,8 +548,6 @@ body {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs-link-current {}
-
 .breadcrumbs-link-current:hover {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -599,6 +601,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: 20px;
 }
 
 .filter-form-group {
@@ -817,7 +820,7 @@ body {
 }
 
 .result-select-control {
-  margin-left: 200px;
+  margin-left: auto;
   padding: 14px 20px;
   width: 292px;
   min-height: 49px;
@@ -846,7 +849,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 70px;
   list-style: none;
   width: 160px;
   gap: 20px 8px;
@@ -1157,6 +1160,7 @@ body {
 }
 
 .modal-wrapper {
+  z-index: 2;
   position: fixed;
   display: flex;
   top: 0;
@@ -1412,7 +1416,6 @@ body {
 .modal-tooltip-button:focus + .modal-tooltip-text {
   display: block;
 }
-
 
 .menu-link {
   color: #000000;
