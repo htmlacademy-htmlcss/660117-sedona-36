@@ -561,8 +561,9 @@ body {
 }
 
 .filter-form {
-  display: flex;
+  display: grid;
   gap: 69px;
+  grid-template-columns: 153px 150px 358px 191px;
 }
 
 .filter-form-group {
@@ -581,7 +582,7 @@ body {
 .filter-form-button-section {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  padding-top: 55px;
   width: 191px;
   margin-left: auto;
 }
@@ -984,11 +985,11 @@ body {
 }
 
 .pagination-link-current:hover {
-  background-color: #f2f2f2;
+  color: #ffffff;
 }
 
 .pagination-link-divider:hover {
-  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .pagination-link-current {
