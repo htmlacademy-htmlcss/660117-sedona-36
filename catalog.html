@@ -28,10 +28,10 @@
               <a class="navigation-link menu-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link menu-link" href="#">О седоне</a>
+              <a class="navigation-link menu-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current menu-link" href="#">Гостиницы</a>
+              <a class="navigation-link navigation-link-current menu-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -45,10 +45,8 @@
                 <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="button navigation-link navigation-link-button" href="#">Хочу сюда</a>
-            </li>
           </ul>
+          <a class="button navigation-link-button" href="#">Хочу сюда!</a>
         </nav>
 
       </header>
@@ -61,7 +59,7 @@
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link-home breadcrumbs-link" href="index.html" >
+                <a class="breadcrumbs-link-home breadcrumbs-link" href="index.html">
                   <svg class="breadcrumbs-link-home-svg" aria-hidden="true" focusable="false"
                     xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -78,7 +76,6 @@
           </header>
 
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-
             <fieldset class="filter-form-group">
               <legend class="filter-form-title">Инфраструктура:</legend>
               <ul class="filter-form-list">
@@ -110,40 +107,46 @@
             </fieldset>
 
             <fieldset class="filter-form-group">
-              <legend class="filter-form-title">Тип жилья:</legend>
+              <legend class="filter-form-title">Тип Жилья:</legend>
               <ul class="filter-form-list">
                 <li class="filter-form-listing">
                   <label class="filter-form-item">
-                    <input class="filter-form-radio visually-hidden" type="radio" value="hotel" name="type-of-apartment" checked>
+                    <input class="filter-form-radio visually-hidden" type="radio" value="hotel"
+                      name="type-of-apartment" checked>
                     <span class="filter-form-radio-mark"></span>
                     <span class="filter-form-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-form-listing">
                   <label class="filter-form-item">
-                    <input class="filter-form-radio visually-hidden" type="radio" value="motel" name="type-of-apartment">
+                    <input class="filter-form-radio visually-hidden" type="radio" value="motel"
+                      name="type-of-apartment">
                     <span class="filter-form-radio-mark"></span>
                     <span class="filter-form-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-form-listing">
                   <label class="filter-form-item">
-                    <input class="filter-form-radio visually-hidden" type="radio" value="apartment" name="type-of-apartment">
+                    <input class="filter-form-radio visually-hidden" type="radio" value="apartment"
+                      name="type-of-apartment">
                     <span class="filter-form-radio-mark"></span>
                     <span class="filter-form-label">Апартаменты</span>
                   </label>
                 </li>
+              </ul>
             </fieldset>
 
             <fieldset class="filter-form-group filter-form-group-price">
-              <legend class="filter-form-title">Стоимость,₽:</legend>
+              <legend class="filter-form-title">Стоимость, ₽:</legend>
               <div class="filter-form-price-wrapper">
                 <label class="filter-form-item-price">
-                  <input class="filter-form-price-input item-price-min" type="text" name="apartment-coast-from" value="0">
+                  <input class="filter-form-price-input item-price-min" type="text" name="apartment-coast-from"
+                    value="0">
                   <span>от</span>
                 </label>
                 <label class="filter-form-item-price">
-                  <input class="filter-form-price-input item-price-max" type="text" name="apartment-coast-to" value="9000">
+                  <input class="filter-form-price-input item-price-max" type="text" name="apartment-coast-to"
+                    value="9000">
                   <span>до</span>
                 </label>
               </div>
@@ -168,7 +171,7 @@
         </section>
 
         <section class="result">
-
+          <h2 class="visually-hidden">Результаты поиска.</h2>
           <div class="result-sort">
             <span class="result-quantity">Найдено гостиниц: 38</span>
             <select class="result-select-control" aria-label="Сортировка.">
@@ -198,7 +201,7 @@
           <ul class="apartment-list">
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
-                <img class="apartment-card-photo" src="images/content/amara-resort-and-spa.jpg" width="300" height="212"
+                <img class="apartment-card-photo" src="images/content/amara-resort-and-spa.jpg" width="300" height="210"
                   alt="Каньон и звёздное небо.">
                 <h3 class="apartment-card-title">Amara Resort & Spa</h3>
               </a>
@@ -216,7 +219,7 @@
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
                 <img class="apartment-card-photo" src="images/content/villas-at-poco-diablo.jpg" width="300"
-                  height="212" alt="Скальные массивы и радуга.">
+                  height="210" alt="Скальные массивы и радуга.">
                 <h3 class="apartment-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="apartment-card-content">
@@ -233,7 +236,7 @@
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
-                <img class="apartment-card-photo" src="images/content/desert-quail-inn.jpg" width="300" height="212"
+                <img class="apartment-card-photo" src="images/content/desert-quail-inn.jpg" width="300" height="210"
                   alt="Скальные массивы при дневном освещении.">
                 <h3 class="apartment-card-title">Desert Quail Inn</h3>
               </a>
@@ -250,7 +253,7 @@
             </li>
             <li class="apartment-card">
               <a class="apartment-card-link" href="#">
-                <img class="apartment-card-photo" src="images/content/gree-tree-inn.jpg" width="300" height="212"
+                <img class="apartment-card-photo" src="images/content/gree-tree-inn.jpg" width="300" height="210"
                   alt="Скальные массивы и звездное небо.">
                 <h3 class="apartment-card-title">GreenTree Inn</h3>
               </a>
@@ -293,7 +296,7 @@
 
         <section class="subscription-form subscription-form-catalog">
           <h2 class="subscription-form-title title">Подпишитесь на рассылку</h2>
-          <p class="subscription-form-paragraph paragraph">Только полезная информация и никакого спама, честное
+          <p class="subscription-form-paragraph paragraph">Только полезная информация и никакого спама,<br> честное
             бойскаутское!</p>
           <form class="subscription-form-email" method="post" action="https://echo.htmlacademy.ru/">
             <label class="subscription-form-email-label">
@@ -313,8 +316,7 @@
               <svg class="social-contacts-link-svg" aria-hidden="true" focusable="false"
                 xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 25 15">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1a12 12 0 0 0-2.3-3c-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z"
-                  clip-rule="evenodd" />
+                  d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1a12 12 0 0 0-2.3-3c-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" />
               </svg>
               <span class="visually-hidden">htmlacademy.ru в вконакте.</span>
             </a>
@@ -340,7 +342,7 @@
             </a>
           </li>
         </ul>
-        <a class="social-contacts-phone" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
+        <a class="social-contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
         <a class="page-footer-htmlacademy-link" href="https://htmlacademy.ru/">
           <svg class="page-footer-htmlacademy-link-svg" xmlns="http://www.w3.org/2000/svg" width="115" height="34">
             <path fill-rule="evenodd" clip-rule="evenodd"
